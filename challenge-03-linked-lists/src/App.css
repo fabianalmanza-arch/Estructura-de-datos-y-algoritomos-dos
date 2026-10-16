@@ -1,0 +1,89 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f1f5f9;
+  color: #1e293b;
+}
+
+.aplicacion {
+  width: min(900px, 92%);
+  margin: 30px auto;
+}
+
+.navegacion {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+button {
+  padding: 11px 16px;
+  border: none;
+  border-radius: 7px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+button:hover:not(:disabled) {
+  background: #1d4ed8;
+}
+
+button:disabled {
+  background: #94a3b8;
+  cursor: not-allowed;
+}
+
+.panel {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px #00000010;
+}
+
+.panel h1 {
+  margin-top: 0;
+  color: #1e3a8a;
+}
+
+.cancion,
+.pagina-actual {
+  margin: 20px 0;
+  padding: 20px;
+  background: #eff6ff;
+  border-left: 5px solid #2563eb;
+  border-radius: 8px;
+  overflow-wrap: anywhere;
+}
+
+.botones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.panel li {
+  margin: 12px 0;
+  overflow-wrap: anywhere;
+}
+
+.boton-pagina {
+  text-align: left;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 600px) {
+  .panel {
+    padding: 16px;
+  }
+}
