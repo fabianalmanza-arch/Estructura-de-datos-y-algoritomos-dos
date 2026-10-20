@@ -5,3 +5,4 @@ export { Queue } from './structures/Queue.js';
 export { BinarySearchTree, BSTNode } from './structures/BinarySearchTree.js';
 export { NaryTree, NaryTreeNode } from './structures/NaryTree.js';
 export { Trie, TrieNode } from './structures/Trie.js';
+export { Graph } from './structures/Graph.js';
