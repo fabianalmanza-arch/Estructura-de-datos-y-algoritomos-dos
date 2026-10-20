@@ -7,7 +7,7 @@ Asignatura: Estructuras de Datos
 
 URL de Despliegue en Vivo: https://eloquent-brigadeiros-aca796.netlify.app
 
-Repositorio GitHub: 
+Repositorio GitHub: https://github.com/fabianalmanza-arch/Estructura-de-datos-y-algoritomos-dos
 
 1. Resumen Ejecutivo
 El presente proyecto consiste en el diseño, desarrollo e implementación de una librería independiente de estructuras de datos (data-structures-lib) compilada mediante Rollup/Babel, y una aplicación web en React (frontend-app) que la consume para resolver casos prácticos del dominio bibliotecario.
