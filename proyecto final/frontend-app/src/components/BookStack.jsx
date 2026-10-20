@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Stack } from 'data-structures-lib';
+import { TransactionPanel } from './TransactionPanel';
 
 // Instancia inicial de la Pila con datos iniciales
 const initialStack = new Stack();
@@ -67,6 +68,12 @@ export function BookStack() {
       <h2 style={{ borderBottom: '2px solid #007bff', paddingBottom: '10px' }}>
         📥 Recepción y Procesamiento de Ejemplares
       </h2>
+
+      <TransactionPanel
+        currentBooks={booksList}
+        onUpdateBooks={(restored) => setBooksList(restored)}
+      />
+
       <p style={{ color: '#aaa', fontSize: '14px' }}>
         Registro de ingreso de nuevos libros al lote de procesamiento (Estructura LIFO / Pila).
       </p>

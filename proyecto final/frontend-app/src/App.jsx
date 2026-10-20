@@ -5,6 +5,7 @@ import { BookStack } from './components/BookStack';
 import { AtmQueue } from './components/AtmQueue';
 import { BstIndex } from './components/BstIndex';
 import { MediaAndBrowser } from './components/MediaAndBrowser';
+import { LibraryNetwork } from './components/LibraryNetwork';
 
 export default function App() {
   const [activeView, setActiveView] = useState('BOOK_STACK');
@@ -17,6 +18,8 @@ export default function App() {
         return <AtmQueue />;
       case 'BST_INDEX':
         return <BstIndex />;
+      case 'GRAPH_NETWORK':
+        return <LibraryNetwork />;
       case 'MUSIC_PLAYER':
       case 'BROWSER_HISTORY':
       case 'MEDIA_PLAYER':

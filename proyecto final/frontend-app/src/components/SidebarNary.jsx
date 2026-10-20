@@ -15,14 +15,17 @@ const booksSub = new NaryTreeNode('Pila de Libros (Stack)', '/inventory/books', 
 inventoryNode.addChild(booksSub);
 
 // Submenús (Nivel 2) dentro de Atención al Cliente
-const atmSub = new NaryTreeNode('Turnos de Cajero (Queue)', '/queue/atm', 'ATM_QUEUE');
+const atmSub = new NaryTreeNode('Turnos de Atención (Queue)', '/queue/atm', 'ATM_QUEUE');
 queueNode.addChild(atmSub);
 
 // Submenús (Nivel 2) dentro de Catálogo
 const bstSub = new NaryTreeNode('Índice Binario (BST)', '/catalog/bst', 'BST_INDEX');
 const searchSub = new NaryTreeNode('Búsqueda Rápida (Trie)', '/catalog/search', 'TRIE_SEARCH');
+const graphNode = new NaryTreeNode('Red Interbibliotecaria (Grafo)', '/network', 'GRAPH_NETWORK');
+
 catalogNode.addChild(bstSub);
 catalogNode.addChild(searchSub);
+catalogNode.addChild(graphNode); // Agregado al árbol N-ario
 
 // Submenús (Nivel 2) dentro de Multimedia
 const playlistSub = new NaryTreeNode('Reproductor de Música', '/media/songs', 'MUSIC_PLAYER');
